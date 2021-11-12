@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="omni_learning" type="result_graph.py" name="result_graph" output="screen" />
+</launch>
