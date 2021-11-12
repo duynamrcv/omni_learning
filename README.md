@@ -1,4 +1,5 @@
 # Omni Reinforcement Learning using Deep Q-network
+This package implement Deep Q-network for Omni-directional mobile robot moving to target position.
 
 ## Requirement
 ```
@@ -12,6 +13,11 @@ pyqtgraph
 ```
 $ pip install -upgrade tensorflow
 $ pip intall pyqtgraph
+```
+
+## Prerequisite
+```
+$ sudo apt install ros-noetic-gazebo-ros
 ```
 
 ## Running
