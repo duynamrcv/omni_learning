@@ -15,13 +15,13 @@ from tensorflow.keras.optimizers import RMSprop
 from tensorflow.keras.layers import Dense, Dropout, Activation
 
 
-EPISODES = 3000
+EPISODES = 1000
 
 class ReinforceAgent():
     def __init__(self, state_size, action_size):
         self.pub_result = rospy.Publisher('result', Float32MultiArray, queue_size=5)
         self.dirPath = os.path.dirname(os.path.realpath(__file__))
-        # self.dirPath = self.dirPath.replace('turtlebot3_dqn/nodes', 'turtlebot3_dqn/save_model/stage_1_')
+        self.dirPath = self.dirPath.replace('omni_learning/src', 'omni_learning/save_model/stage_')
         self.result = Float32MultiArray()
 
         self.load_model = False
@@ -45,9 +45,9 @@ class ReinforceAgent():
         self.updateTargetModel()
 
         if self.load_model:
-            self.model.set_weights(load_model(self.dirPath+str(self.load_episode)+".h5").get_weights())
+            self.model.set_weights(load_model(self.dirPath + str(self.load_episode) + ".h5").get_weights())
 
-            with open(self.dirPath+str(self.load_episode)+'.json') as outfile:
+            with open(self.dirPath + str(self.load_episode) + '.json') as outfile:
                 param = json.load(outfile)
                 self.epsilon = param.get('epsilon')
 

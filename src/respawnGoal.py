@@ -19,10 +19,10 @@ class Respawn():
         self.goal_position.position.x = self.init_goal_x
         self.goal_position.position.y = self.init_goal_y
         self.modelName = 'goal'
-        self.obstacle_1 = 2.0, 2.0
-        self.obstacle_2 = 2.0, -2.0
-        self.obstacle_3 = -2.0, 2.0
-        self.obstacle_4 = -2.0, -2.0
+        self.obstacle_1 = 5.0, 5.0
+        self.obstacle_2 = 5.0, -5.0
+        self.obstacle_3 = -5.0, 5.0
+        self.obstacle_4 = -5.0, -5.0
         self.last_goal_x = self.init_goal_x
         self.last_goal_y = self.init_goal_y
         self.last_index = 0

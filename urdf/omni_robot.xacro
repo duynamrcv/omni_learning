@@ -2,7 +2,7 @@
 
 <robot name="omni_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-  	<xacro:include filename="$(find omni_gazebo)/urdf/omni_robot.gazebo" />
+  	<xacro:include filename="$(find omni_learning)/urdf/omni_robot.gazebo" />
 	<xacro:property name="scale" value="0.01" />
 
   	<link name="base_footprint"></link>
@@ -108,7 +108,7 @@
 		<visual>
 			<origin xyz="-0.01 0 -0.03" rpy="1.5707 0 1.5707"/>
 			<geometry>
-				<mesh filename="package://omni_gazebo/meshes/astra.dae" scale="0.001 0.001 0.001" />
+				<mesh filename="package://omni_learning/meshes/astra.dae" scale="0.001 0.001 0.001" />
 			</geometry>
 		</visual>
 
@@ -149,14 +149,14 @@
 		<collision>
 			<origin xyz="0 0 0" rpy="1.5707 0 3.1412"/>
 			<geometry>
-				<mesh filename="package://omni_gazebo/meshes/rplidar.dae" scale="0.001 0.001 0.001" />
+				<mesh filename="package://omni_learning/meshes/rplidar.dae" scale="0.001 0.001 0.001" />
 			</geometry>
 		</collision>
 
 		<visual>
 			<origin xyz="0 0 0" rpy="1.5707 0 4.71"/>
 			<geometry>
-				<mesh filename="package://omni_gazebo/meshes/rplidar.dae" scale="0.001 0.001 0.001" />
+				<mesh filename="package://omni_learning/meshes/rplidar.dae" scale="0.001 0.001 0.001" />
 			</geometry>
 		</visual>
 
@@ -222,7 +222,7 @@
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0.0" />
 			<geometry>
-				<mesh filename="package://omni_gazebo/meshes/rim.stl" scale="5 5 5"/>
+				<mesh filename="package://omni_learning/meshes/rim.stl" scale="5 5 5"/>
 			</geometry>
 			<material name="left_rim_material">
 				<color rgba="0.3 0 0 1"/>
@@ -232,7 +232,7 @@
 		<!-- top_wheel collision -->
 		<collision>
 			<geometry>
-				<mesh filename="package://omni_gazebo/meshes/rim.stl" scale="5 5 5"/>
+				<mesh filename="package://omni_learning/meshes/rim.stl" scale="5 5 5"/>
 			</geometry>
 		</collision>
 		
@@ -267,7 +267,7 @@
 		<visual>
 		<origin xyz="0 0 0" rpy="0 0 0.0" />
 		<geometry>
-			<mesh filename="package://omni_gazebo/meshes/rim.stl" scale="5 5 5"/>
+			<mesh filename="package://omni_learning/meshes/rim.stl" scale="5 5 5"/>
 		</geometry>
 		<material name="left_rim_material">
 			<color rgba="0.3 0 0 1"/>
@@ -276,7 +276,7 @@
 		<!-- right_bottom_wheel collision -->
 		<collision>
 			<geometry>
-				<mesh filename="package://omni_gazebo/meshes/rim.stl" scale="5 5 5"/>
+				<mesh filename="package://omni_learning/meshes/rim.stl" scale="5 5 5"/>
 			</geometry>
 		</collision>
 		<inertial>
@@ -311,7 +311,7 @@
 	<visual>
 		<origin xyz="0 0 0" rpy="0 0 0.0" />
 		<geometry>
-			<mesh filename="package://omni_gazebo/meshes/rim.stl" scale="5 5 5"/>
+			<mesh filename="package://omni_learning/meshes/rim.stl" scale="5 5 5"/>
 		</geometry>
 			<material name="left_rim_material">
 				<color rgba="0.3 0 0 1"/>
@@ -321,7 +321,7 @@
 		<!-- left_bottom wheel collision -->
 		<collision>
 			<geometry>
-				<mesh filename="package://omni_gazebo/meshes/rim.stl" scale="5 5 5"/>
+				<mesh filename="package://omni_learning/meshes/rim.stl" scale="5 5 5"/>
 			</geometry>
 		</collision>
 		<inertial>
@@ -337,7 +337,7 @@
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0"/>
 			<geometry>
-				<mesh filename="package://omni_gazebo/meshes/roller.stl" scale="5 5 5"/>
+				<mesh filename="package://omni_learning/meshes/roller.stl" scale="5 5 5"/>
 			</geometry>
 			<material name="bottem_left_roller_e_material">
 				<color rgba="0.0 0.0 1.0 1"/>
@@ -357,7 +357,7 @@
 			
 		<collision>
 			<geometry>
-				<mesh filename="package://omni_gazebo/meshes/roller.stl" scale="5 5 5"/>
+				<mesh filename="package://omni_learning/meshes/roller.stl" scale="5 5 5"/>
 			</geometry>
 		</collision>
 	</link>
@@ -395,7 +395,7 @@
 
 			<geometry>
 
-				<mesh filename="package://omni_gazebo/meshes/roller.stl" scale="5 5 5"/>
+				<mesh filename="package://omni_learning/meshes/roller.stl" scale="5 5 5"/>
 
 			</geometry>
 			<material name="bottem_left_roller_e_material">
@@ -409,7 +409,7 @@
 
 			<geometry>
 
-				<mesh filename="package://omni_gazebo/meshes/roller.stl" scale="5 5 5"/>
+				<mesh filename="package://omni_learning/meshes/roller.stl" scale="5 5 5"/>
 
 			</geometry>
 
@@ -449,7 +449,7 @@
 
 			<geometry>
 
-				<mesh filename="package://omni_gazebo/meshes/roller.stl" scale="5 5 5"/>
+				<mesh filename="package://omni_learning/meshes/roller.stl" scale="5 5 5"/>
 
 			</geometry>
 			<material name="bottem_left_roller_n_material">
@@ -463,7 +463,7 @@
 
 			<geometry>
 
-				<mesh filename="package://omni_gazebo/meshes/roller.stl" scale="5 5 5"/>
+				<mesh filename="package://omni_learning/meshes/roller.stl" scale="5 5 5"/>
 
 			</geometry>
 
@@ -494,7 +494,7 @@
 		</inertial>
 		<visual>
 			<geometry>
-				<mesh filename="package://omni_gazebo/meshes/roller.stl" scale="5 5 5"/>
+				<mesh filename="package://omni_learning/meshes/roller.stl" scale="5 5 5"/>
 			</geometry>
 			<material name="bottem_left_roller_nw_material">
 				<color rgba="0.0 0.0 1.0 1"/>
@@ -502,7 +502,7 @@
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://omni_gazebo/meshes/roller.stl" scale="5 5 5"/>
+				<mesh filename="package://omni_learning/meshes/roller.stl" scale="5 5 5"/>
 			</geometry>
 		</collision>
 	</link>
@@ -531,7 +531,7 @@
 		</inertial>
 		<visual>
 			<geometry>
-				<mesh filename="package://omni_gazebo/meshes/roller.stl" scale="5 5 5"/>
+				<mesh filename="package://omni_learning/meshes/roller.stl" scale="5 5 5"/>
 			</geometry>
 			<material name="bottem_left_roller_w_material">
 				<color rgba="0.0 0.0 1.0 1"/>
@@ -539,7 +539,7 @@
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://omni_gazebo/meshes/roller.stl" scale="5 5 5"/>
+				<mesh filename="package://omni_learning/meshes/roller.stl" scale="5 5 5"/>
 			</geometry>
 		</collision>
 	</link>
@@ -568,7 +568,7 @@
 		</inertial>
 		<visual>
 			<geometry>
-				<mesh filename="package://omni_gazebo/meshes/roller.stl" scale="5 5 5"/>
+				<mesh filename="package://omni_learning/meshes/roller.stl" scale="5 5 5"/>
 			</geometry>
 			<material name="bottem_left_roller_sw_material">
 				<color rgba="0.0 0.0 1.0 1"/>
@@ -576,7 +576,7 @@
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://omni_gazebo/meshes/roller.stl" scale="5 5 5"/>
+				<mesh filename="package://omni_learning/meshes/roller.stl" scale="5 5 5"/>
 			</geometry>
 		</collision>
 	</link>
@@ -605,7 +605,7 @@
 		</inertial>
 		<visual>
 			<geometry>
-				<mesh filename="package://omni_gazebo/meshes/roller.stl" scale="5 5 5"/>
+				<mesh filename="package://omni_learning/meshes/roller.stl" scale="5 5 5"/>
 			</geometry>
 			<material name="bottem_left_roller_s_material">
 				<color rgba="0.0 0.0 1.0 1"/>
@@ -613,7 +613,7 @@
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://omni_gazebo/meshes/roller.stl" scale="5 5 5"/>
+				<mesh filename="package://omni_learning/meshes/roller.stl" scale="5 5 5"/>
 			</geometry>
 		</collision>
 	</link>
@@ -642,7 +642,7 @@
 		</inertial>
 		<visual>
 			<geometry>
-				<mesh filename="package://omni_gazebo/meshes/roller.stl" scale="5 5 5"/>
+				<mesh filename="package://omni_learning/meshes/roller.stl" scale="5 5 5"/>
 			</geometry>
 			<material name="bottem_left_roller_se_material">
 				<color rgba="0.0 0.0 1.0 1"/>
@@ -650,7 +650,7 @@
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://omni_gazebo/meshes/roller.stl" scale="5 5 5"/>
+				<mesh filename="package://omni_learning/meshes/roller.stl" scale="5 5 5"/>
 			</geometry>
 		</collision>
 	</link>
@@ -669,7 +669,7 @@
 		<visual>
 			<origin xyz="0 0 0"	rpy="0 0 0"/>
 			<geometry>
-				<mesh filename="package://omni_gazebo/meshes/roller.stl" scale="5 5 5"/>
+				<mesh filename="package://omni_learning/meshes/roller.stl" scale="5 5 5"/>
 			</geometry>
 			<material name="bottem_right_roller_e_material">
 				<color rgba="0.0 0.0 1.0 1"/>
@@ -688,7 +688,7 @@
 		</inertial>
 		<collision>
 			<geometry>
-				<mesh filename="package://omni_gazebo/meshes/roller.stl" scale="5 5 5"/>
+				<mesh filename="package://omni_learning/meshes/roller.stl" scale="5 5 5"/>
 			</geometry>
 		</collision>
 	</link>
@@ -716,7 +716,7 @@
 		</inertial>
 		<visual>
 			<geometry>
-				<mesh filename="package://omni_gazebo/meshes/roller.stl" scale="5 5 5"/>
+				<mesh filename="package://omni_learning/meshes/roller.stl" scale="5 5 5"/>
 			</geometry>
 			<material name="bottem_right_roller_e_material">
 				<color rgba="0.0 0.0 1.0 1"/>
@@ -724,7 +724,7 @@
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://omni_gazebo/meshes/roller.stl" scale="5 5 5"/>
+				<mesh filename="package://omni_learning/meshes/roller.stl" scale="5 5 5"/>
 			</geometry>
 		</collision>
 	</link>
@@ -753,7 +753,7 @@
 		</inertial>
 		<visual>
 			<geometry>
-				<mesh filename="package://omni_gazebo/meshes/roller.stl" scale="5 5 5"/>
+				<mesh filename="package://omni_learning/meshes/roller.stl" scale="5 5 5"/>
 			</geometry>
 			<material name="bottem_right_roller_n_material">
 				<color rgba="0.0 0.0 1.0 1"/>
@@ -761,7 +761,7 @@
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://omni_gazebo/meshes/roller.stl" scale="5 5 5"/>
+				<mesh filename="package://omni_learning/meshes/roller.stl" scale="5 5 5"/>
 			</geometry>
 		</collision>
 	</link>
@@ -790,7 +790,7 @@
 		</inertial>
 		<visual>
 			<geometry>
-				<mesh filename="package://omni_gazebo/meshes/roller.stl" scale="5 5 5"/>
+				<mesh filename="package://omni_learning/meshes/roller.stl" scale="5 5 5"/>
 			</geometry>
 			<material name="bottem_right_roller_nw_material">
 				<color rgba="0.0 0.0 1.0 1"/>
@@ -798,7 +798,7 @@
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://omni_gazebo/meshes/roller.stl" scale="5 5 5"/>
+				<mesh filename="package://omni_learning/meshes/roller.stl" scale="5 5 5"/>
 			</geometry>
 		</collision>
 	</link>
@@ -827,7 +827,7 @@
 		</inertial>
 		<visual>
 			<geometry>
-				<mesh filename="package://omni_gazebo/meshes/roller.stl" scale="5 5 5"/>
+				<mesh filename="package://omni_learning/meshes/roller.stl" scale="5 5 5"/>
 			</geometry>
 			<material name="bottem_right_roller_w_material">
 				<color rgba="0.0 0.0 1.0 1"/>
@@ -835,7 +835,7 @@
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://omni_gazebo/meshes/roller.stl" scale="5 5 5"/>
+				<mesh filename="package://omni_learning/meshes/roller.stl" scale="5 5 5"/>
 			</geometry>
 		</collision>
 	</link>
@@ -864,7 +864,7 @@
 		</inertial>
 		<visual>
 			<geometry>
-				<mesh filename="package://omni_gazebo/meshes/roller.stl" scale="5 5 5"/>
+				<mesh filename="package://omni_learning/meshes/roller.stl" scale="5 5 5"/>
 			</geometry>
 			<material name="bottem_right_roller_sw_material">
 				<color rgba="0.0 0.0 1.0 1"/>
@@ -872,7 +872,7 @@
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://omni_gazebo/meshes/roller.stl" scale="5 5 5"/>
+				<mesh filename="package://omni_learning/meshes/roller.stl" scale="5 5 5"/>
 			</geometry>
 		</collision>
 	</link>
@@ -901,7 +901,7 @@
 		</inertial>
 		<visual>
 			<geometry>
-				<mesh filename="package://omni_gazebo/meshes/roller.stl" scale="5 5 5"/>
+				<mesh filename="package://omni_learning/meshes/roller.stl" scale="5 5 5"/>
 			</geometry>
 			<material name="bottem_right_roller_s_material">
 				<color rgba="0.0 0.0 1.0 1"/>
@@ -909,7 +909,7 @@
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://omni_gazebo/meshes/roller.stl" scale="5 5 5"/>
+				<mesh filename="package://omni_learning/meshes/roller.stl" scale="5 5 5"/>
 			</geometry>
 		</collision>
 	</link>
@@ -938,7 +938,7 @@
 		</inertial>
 		<visual>
 			<geometry>
-				<mesh filename="package://omni_gazebo/meshes/roller.stl" scale="5 5 5"/>
+				<mesh filename="package://omni_learning/meshes/roller.stl" scale="5 5 5"/>
 			</geometry>
 			<material name="bottem_right_roller_se_material">
 				<color rgba="0.0 0.0 1.0 1"/>
@@ -946,7 +946,7 @@
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://omni_gazebo/meshes/roller.stl" scale="5 5 5"/>
+				<mesh filename="package://omni_learning/meshes/roller.stl" scale="5 5 5"/>
 			</geometry>
 		</collision>
 	</link>
@@ -965,7 +965,7 @@
 		<visual>
 			<origin	xyz="0 0 0"	rpy="0 0 0"/>
 			<geometry>
-				<mesh filename="package://omni_gazebo/meshes/roller.stl" scale="5 5 5"/>
+				<mesh filename="package://omni_learning/meshes/roller.stl" scale="5 5 5"/>
 			</geometry>
 			<material name="right_left_roller_e_material">
 				<color rgba="0.0 0.0 1.0 1"/>
@@ -984,7 +984,7 @@
 		</inertial>
 		<collision>
 			<geometry>
-				<mesh filename="package://omni_gazebo/meshes/roller.stl" scale="5 5 5"/>
+				<mesh filename="package://omni_learning/meshes/roller.stl" scale="5 5 5"/>
 			</geometry>
 		</collision>
 	</link>
@@ -1013,7 +1013,7 @@
 		</inertial>
 		<visual>
 			<geometry>
-				<mesh filename="package://omni_gazebo/meshes/roller.stl" scale="5 5 5"/>
+				<mesh filename="package://omni_learning/meshes/roller.stl" scale="5 5 5"/>
 			</geometry>
 			<material name="right_left_roller_e_material">
 				<color rgba="0.0 0.0 1.0 1"/>
@@ -1021,7 +1021,7 @@
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://omni_gazebo/meshes/roller.stl" scale="5 5 5"/>
+				<mesh filename="package://omni_learning/meshes/roller.stl" scale="5 5 5"/>
 			</geometry>
 		</collision>
 	</link>
@@ -1050,7 +1050,7 @@
 		</inertial>
 		<visual>
 			<geometry>
-				<mesh filename="package://omni_gazebo/meshes/roller.stl" scale="5 5 5"/>
+				<mesh filename="package://omni_learning/meshes/roller.stl" scale="5 5 5"/>
 			</geometry>
 			<material name="right_left_roller_n_material">
 				<color rgba="0.0 0.0 1.0 1"/>
@@ -1058,7 +1058,7 @@
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://omni_gazebo/meshes/roller.stl" scale="5 5 5"/>
+				<mesh filename="package://omni_learning/meshes/roller.stl" scale="5 5 5"/>
 			</geometry>
 		</collision>
 	</link>
@@ -1087,7 +1087,7 @@
 		</inertial>
 		<visual>
 			<geometry>
-				<mesh filename="package://omni_gazebo/meshes/roller.stl" scale="5 5 5"/>
+				<mesh filename="package://omni_learning/meshes/roller.stl" scale="5 5 5"/>
 			</geometry>
 			<material name="right_left_roller_nw_material">
 				<color rgba="0.0 0.0 1.0 1"/>
@@ -1095,7 +1095,7 @@
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://omni_gazebo/meshes/roller.stl" scale="5 5 5"/>
+				<mesh filename="package://omni_learning/meshes/roller.stl" scale="5 5 5"/>
 			</geometry>
 		</collision>
 	</link>
@@ -1124,7 +1124,7 @@
 		</inertial>
 		<visual>
 			<geometry>
-				<mesh filename="package://omni_gazebo/meshes/roller.stl" scale="5 5 5"/>
+				<mesh filename="package://omni_learning/meshes/roller.stl" scale="5 5 5"/>
 			</geometry>
 			<material name="right_left_roller_w_material">
 				<color rgba="0.0 0.0 1.0 1"/>
@@ -1132,7 +1132,7 @@
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://omni_gazebo/meshes/roller.stl" scale="5 5 5"/>
+				<mesh filename="package://omni_learning/meshes/roller.stl" scale="5 5 5"/>
 			</geometry>
 		</collision>
 	</link>
@@ -1161,7 +1161,7 @@
 		</inertial>
 		<visual>
 			<geometry>
-				<mesh filename="package://omni_gazebo/meshes/roller.stl" scale="5 5 5"/>
+				<mesh filename="package://omni_learning/meshes/roller.stl" scale="5 5 5"/>
 			</geometry>
 			<material name="right_left_roller_sw_material">
 				<color rgba="0.0 0.0 1.0 1"/>
@@ -1169,7 +1169,7 @@
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://omni_gazebo/meshes/roller.stl" scale="5 5 5"/>
+				<mesh filename="package://omni_learning/meshes/roller.stl" scale="5 5 5"/>
 			</geometry>
 		</collision>
 	</link>
@@ -1198,7 +1198,7 @@
 		</inertial>
 		<visual>
 			<geometry>
-				<mesh filename="package://omni_gazebo/meshes/roller.stl" scale="5 5 5"/>
+				<mesh filename="package://omni_learning/meshes/roller.stl" scale="5 5 5"/>
 			</geometry>
 			<material name="right_left_roller_s_material">
 				<color rgba="0.0 0.0 1.0 1"/>
@@ -1206,7 +1206,7 @@
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://omni_gazebo/meshes/roller.stl" scale="5 5 5"/>
+				<mesh filename="package://omni_learning/meshes/roller.stl" scale="5 5 5"/>
 			</geometry>
 		</collision>
 	</link>
@@ -1235,7 +1235,7 @@
 		</inertial>
 		<visual>
 			<geometry>
-				<mesh filename="package://omni_gazebo/meshes/roller.stl" scale="5 5 5"/>
+				<mesh filename="package://omni_learning/meshes/roller.stl" scale="5 5 5"/>
 			</geometry>
 			<material name="right_left_roller_se_material">
 				<color rgba="0.0 0.0 1.0 1"/>
@@ -1243,7 +1243,7 @@
 		</visual>
 		<collision>
 			<geometry>
-				<mesh filename="package://omni_gazebo/meshes/roller.stl" scale="5 5 5"/>
+				<mesh filename="package://omni_learning/meshes/roller.stl" scale="5 5 5"/>
 			</geometry>
 		</collision>
 	</link>
