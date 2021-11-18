@@ -10,7 +10,7 @@ from nav_msgs.msg import Odometry
 from std_srvs.srv import Empty
 from tf.transformations import euler_from_quaternion, quaternion_from_euler
 sys.path.append(os.path.dirname(__file__))
-from respawnGoal import Respawn
+from respawn_goal import Respawn
 
 class Env():
     def __init__(self, action_size):
@@ -88,12 +88,12 @@ class Env():
 
         if done:
             rospy.loginfo("Collision!!")
-            reward = -200
+            reward = -500
             self.pub_cmd_vel.publish(Twist())
 
         if self.get_goalbox:
             rospy.loginfo("Goal!!")
-            reward = 200
+            reward = 1000
             self.pub_cmd_vel.publish(Twist())
             self.goal_x, self.goal_y = self.respawn_goal.getPosition(True, delete=True)
             self.goal_distance = self.getGoalDistace()
@@ -106,7 +106,7 @@ class Env():
         ang_vel = ((self.action_size - 1)/2 - action) * max_angular_vel * 0.5
 
         vel_cmd = Twist()
-        vel_cmd.linear.x = 0.15
+        vel_cmd.linear.x = 0.5
         vel_cmd.angular.z = ang_vel
         self.pub_cmd_vel.publish(vel_cmd)
 

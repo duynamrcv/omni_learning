@@ -19,5 +19,6 @@ include_directories(${catkin_INCLUDE_DIRS})
 catkin_install_python(PROGRAMS
   src/dqn_node.py
   src/result_graph.py
+  src/action_graph.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
